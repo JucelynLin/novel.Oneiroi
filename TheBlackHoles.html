@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styleHome.css">
+    <link rel="stylesheet" href="css/styleTheBlackHoles.css">
+    <title>novel.Oneiroi.com.my/Welcome</title>
+</head>
+
+<body>
+
+  <div class="container"> <!--container-->
+    <header>
+      
+        <div class="nav-left"> <!--left-->
+            <div class="left left-small-word"><del>停止</del></div> 
+            <div class="right">
+                <div class="menuBar" id="bar" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3 no-bottom"></div>
+                    <span class="small-word-bottom">做夢</span>
+                </div>                    
+            </div>
+        </div>
+
+        <div class="center"> <!--center-->
+            <h1><a href="#">俄尼里伊<br/><bdo dir="rtl">ONEIROI</bdo></a></h1>
+                <!-- <div class="eng-header"></div> -->
+        </div>
+        
+        <div class="flex nav-right"> <!--right-->
+    
+            <div class="nav-right-login">
+                <button onclick="document.getElementById('id01').style.display='block'" class="login-btn">夢神入鄉</button>
+        
+                    <div id="id01" class="modal">    
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                
+                            <div class="logImg login-container">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                              <img src="img/blackJudy.jpg" alt="Hey Judy" class="judy">
+                            </div>
+                        
+                            <div class="login-container">
+                                <label for="uname" class="label-size"><b>夢神名稱</b></label>
+                                <input type="text" class="uname" placeholder="Username" name="uname" required>
+                        
+                                <label for="psw" class="label-size"><b>通關密碼</b></label>
+                                <input type="password" class="psw" placeholder="Password" name="psw" required>
+
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember" class="labelSize"> 記住本神
+                                </label>
+                            </div>
+
+                            <div class="login-container" style="background-color:#f1f1f1">
+                                <button type="submit" class="submit-word">夢神入鄉</button>
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn-cancel">取消</button>
+                            
+                            </div>
+                        </form>
+                    </div>
+                        
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+                            
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                        
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="main">
+        <div class="bgImg">
+           <div class="modalBg"></div>
+           <div class="product">
+                <img src="img/BlackHole.jpg" alt="光年之外">
+            </div>
+            <p class="product-title">光年之外</p>
+        </div>
+    </div>
+
+    <footer class="footer"> <!--footer-->
+
+        <div class="footer-left">
+            <div style="margin-left: 100px; display: flex; padding-top:10px;">
+                <div class="border spacing">
+                    <p>
+                    嚴禁抄襲<br/>
+                    不得複製轉載。
+                    </p>
+                        
+                    </div>
+                
+                <div class="spacing" >
+                    <p>
+                    本網所有作品皆為虛構，<br/>
+                    如有雷同，<br/>
+                    純屬巧合。
+                    </p> 
+                </div>
+                
+            </div>  
+        </div>
+    
+        <div class="copyright">
+            <span>
+                &copy 2019 novel.Oneiroi.com All Rights Reserved 版權所有 俄尼里伊小說網
+            </span>
+        </div>
+        <div class="footer-right">
+            <img src="img/Fb.png" alt="Facebook" class="fb icon"> 
+            <img src="img/Gmail.png" alt="Gmail" class="gmail icon">
+        </div>
+    
+      </footer>
+    
+      <script src="./js/index.js"></script>
+    
+    </body>
+    
+    </html>
